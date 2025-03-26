@@ -33,14 +33,10 @@
     combos {
         compatible = "zmk,combos";
 
-        cmd_tilda {
+        cmd_grave {
+            timeout-ms = <50>;
             bindings = <&kp LG(GRAVE)>;
             key-positions = <0 55>;
-        };
-
-        cmd_test {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <54 55>;
         };
     };
 
