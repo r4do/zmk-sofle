@@ -42,7 +42,7 @@
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <0 1>;
-        }
+        };
     };
 
     scroll_encoder: scroll_encoder {
