@@ -1,0 +1,55 @@
+boards/shields/eyelash_sofle/eyelash_sofle.dtsi
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-159
+boards/shields/eyelash_sofle/eyelash_sofle_right.conf
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-28
+README.md
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-2,6,13-22,24,28,30
+boards/shields/eyelash_sofle/eyelash_sofle_right.overlay
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-33
+boards/shields/eyelash_sofle/Kconfig.shield
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-8
+config/eyelash_sofle.keymap
+  s_f84972ebf2f9ea::t_87355e7f480f0d 7,10,30,33-63,68-70,85-99,114-115,128,141-167
+  s_f84972ebf2f9ea::t_86999f3ca4a298 71-72
+.gitignore
+  s_f84972ebf2f9ea::t_87355e7f480f0d 5-6
+build.yaml
+  s_f84972ebf2f9ea::t_87355e7f480f0d 3-4,7-9
+boards/shields/eyelash_sofle/eyelash_sofle_left.overlay
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-34
+config/eyelash_sofle.conf
+  s_f84972ebf2f9ea::t_87355e7f480f0d 21,47-61
+.github/workflows/build.yml
+  s_f84972ebf2f9ea::t_87355e7f480f0d 10
+boards/shields/eyelash_sofle/Kconfig.defconfig
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-76
+config/west.yml
+  s_f84972ebf2f9ea::t_87355e7f480f0d 5-6,11-13,15-29
+keymap-drawer/eyelash_sofle.yaml
+  s_f84972ebf2f9ea::t_87355e7f480f0d 59-60,65,68,133,198-327,329-330
+  s_f84972ebf2f9ea::t_a010405ce69b55 3
+README_EN.md
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-2,6,13-19,21-22,24,26,28,30
+keymap-drawer/eyelash_sofle.svg
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1,160,164,169,174,178,295-296,306-307,312-313,365-366,587,592,597-598,623-624,637-639,643-644,998-1000,1004-1005,1015-1016,1021-1022,1342-2004
+boards/shields/eyelash_sofle/eyelash_sofle_left.conf
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-59
+boards/shields/eyelash_sofle/eyelash_sofle-layouts.dtsi
+  s_f84972ebf2f9ea::t_87355e7f480f0d 1-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a0f54cd77990052c545af0691d4e939dfd8e16df",
+  "prompts": {},
+  "sessions": {
+    "s_f84972ebf2f9ea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fceb62f4-78a1-4d2d-8072-8c5b6dd09d41",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Kyrylo Mykhailets <rado.ua@gmail.com>"
+    }
+  }
+}
