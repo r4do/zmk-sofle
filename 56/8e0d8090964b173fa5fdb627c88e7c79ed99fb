@@ -1,0 +1,19 @@
+config/eyelash_sofle.keymap
+  s_f84972ebf2f9ea::t_bce50482e5dd1b 58-66,110
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "568e0d8090964b173fa5fdb627c88e7c79ed99fb",
+  "prompts": {},
+  "sessions": {
+    "s_f84972ebf2f9ea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fceb62f4-78a1-4d2d-8072-8c5b6dd09d41",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Kyrylo Mykhailets <rado.ua@gmail.com>"
+    }
+  }
+}
