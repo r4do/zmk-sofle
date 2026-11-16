@@ -1,5 +1,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+// Encoder scroll speed; distance per detent ~= SCRL_VAL * tap-ms / 1000
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 85
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -13,12 +14,9 @@
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
-
+// &msc is only used by the encoder: constant speed so every detent scrolls the same amount
 &msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
+    acceleration-exponent = <0>;
 };
 
 &mmv {
@@ -34,16 +32,14 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-        tap-ms = <100>;
+        tap-ms = <30>;
     };
 
-    scroll_encoder_vertical: scroll_encoder_vertical {
+    scroll_encoder_horizontal: scroll_encoder_horizontal {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-
-        tap-ms = <100>;
+        tap-ms = <30>;
     };
 
     behaviors {
@@ -141,7 +137,7 @@
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder_vertical>;
+            sensor-bindings = <&scroll_encoder_horizontal>;
             display-name = "LAYER2";
         };
 
